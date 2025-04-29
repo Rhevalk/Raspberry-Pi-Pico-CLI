@@ -41,6 +41,13 @@ To send AT commands via Pico's serial interface, use the `@` symbol as a prefix.
 @ AT+CWMODE?  # Query current WiFi mode
 ```
 
+## ✨ Features
+
+1. Control GPIO: on/off, PWM, analog read, and digital read
+2. Create, delete, write, read, and edit any text-based files
+3. ESP-AT support: control Wi-Fi and BLE via ESP modules  
+   👉 [See ESP-AT command examples](https://docs.espressif.com/projects/esp-at/en/latest/esp32c3/AT_Command_Examples/index.html)
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [MIT License](https://img.shields.io/badge/license-MIT-green) file for details.
