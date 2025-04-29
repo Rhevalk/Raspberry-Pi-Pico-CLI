@@ -39,3 +39,9 @@ To send AT commands via Pico's serial interface, use the `@` symbol as a prefix.
 @ AT          # Check connection/status
 @ AT+GMR      # Check firmware version
 @ AT+CWMODE?  # Query current WiFi mode
+```
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [MIT License](https://img.shields.io/badge/license-MIT-green) file for details.
+
