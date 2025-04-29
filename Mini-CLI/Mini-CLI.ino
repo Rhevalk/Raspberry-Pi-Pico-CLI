@@ -40,13 +40,7 @@ void setup() {
   Serial1.setRX(1); // RX di GP1
 
   Serial1.begin(115200);
-
-  Serial2.setTX(4); // TX di GP0
-  Serial2.setRX(5); // RX di GP1
-
-  Serial2.begin(115200);
-
-
+  
   setupCLI();  // Daftarkan perintah ke CLI
 
   // Buat task CLI
