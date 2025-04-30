@@ -77,17 +77,17 @@ To send AT commands via Pico's serial interface, use the `@` symbol as a prefix.
 | `gsts` | `gsts {[pin(#list)] | rn ->(*)} [from pin]* [to pin]*` | melihat status pin saat ini
 |                                                                 SYSTEM STORAGE                       |
 |----------------------------|----------------------------------|---------------------------------------|
-| `mkfil` | `mkfil <type> <filename` | Make file |
+| `mkfil` | `mkfil <type> <filename>` | Make file |
 | `wrtfi` | `wrtfil <filename> "content"` | Write file |
-| `rdfil` | `` | Read file |
-| `edtfil` | `` | Edit file |
-| `rmvfil` | `` | Remove file |
-| `szfil` | `` | Info file size |
-| `rnmfil` | `` | Rename file |
-| `mkdir` | `` | Make directory |
-| `rmvdir` | `` | Remove directory |
-| `ls` | `` | Table of Contents |
-| `cs` | `` | Go to directory |
+| `rdfil` | `rdfil <filename>` | Read file |
+| `edtfil` | `edtfil <-n | -r ->(*)> <filename> <index> \"text\"*` | Edit file |
+| `rmvfil` | `rmvfil <filename>` | Remove file |
+| `szfil` | `szfil <filename>` | Info file size |
+| `rnmfil` | `rnmfil <old_name> <new_name>` | Rename file |
+| `mkdir` | `mkdir <folder_name>` | Make directory |
+| `rmvdir` | `rmvdir <folder_name>` | Remove directory |
+| `ls` | `ls` | Table of Contents |
+| `cs` | `cd <Name directory>` | Go to directory |
 
 ## 📄 License
 
