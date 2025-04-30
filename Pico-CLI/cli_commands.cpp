@@ -210,7 +210,7 @@ void setupCLI() {
   addCmd("rnmfil", cmd_frnm, "Rename file");
 
   addCmd("mkdir", cmd_mkdir, "Make directory");
-  addCmd("rmdir", cmd_rmdir, "Remove directory");
+  addCmd("rmvdir", cmd_rmdir, "Remove directory");
 
   addCmd("ls", cmd_ls, "Table of Contents");
   addCmd("cd", cmd_cd, "Go to directory");
