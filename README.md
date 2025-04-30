@@ -63,31 +63,36 @@ To send AT commands via Pico's serial interface, use the `@` symbol as a prefix.
 
 
 ## Command List
-|                                                                 System                       |
-|----------------------------|----------------------------------|---------------------------------------|
-| Command                     | Format                          | Description                           |
-|----------------------------|----------------------------------|---------------------------------------|
-| `@`                        | `@ <Command ESP-AT>`             | untuk memerintah ESP-AT               |
-| `help`                     | `help`                           | daftar perintah yang tersedia di Pico CLI |
-| `echo`                     | `echo <teks>`                    | menampilkan pesan yang anda kirim |
-|                                                                 GPIO                       |
-|----------------------------|----------------------------------|---------------------------------------|
-| `gset`                     | `gset [pin(#list)] {<on | off> | [0 - 255] | input | inputpull}` | mengontrol gpio bisa digital maupun analog secara otomatis |
-| `grst`         | `grst {[pin(#list)] | rn ->(*)} [from pin]* [to pin]*` | mereset pin yang dipilih dalam tunggal, list atau jangkauan |
-| `gsts` | `gsts {[pin(#list)] | rn ->(*)} [from pin]* [to pin]*` | melihat status pin saat ini
-|                                                                 SYSTEM STORAGE                       |
-|----------------------------|----------------------------------|---------------------------------------|
-| `mkfil` | `mkfil <type> <filename>` | Make file |
-| `wrtfi` | `wrtfil <filename> "content"` | Write file |
-| `rdfil` | `rdfil <filename>` | Read file |
-| `edtfil` | `edtfil <-n | -r ->(*)> <filename> <index> \"text\"*` | Edit file |
-| `rmvfil` | `rmvfil <filename>` | Remove file |
-| `szfil` | `szfil <filename>` | Info file size |
-| `rnmfil` | `rnmfil <old_name> <new_name>` | Rename file |
-| `mkdir` | `mkdir <folder_name>` | Make directory |
-| `rmvdir` | `rmvdir <folder_name>` | Remove directory |
-| `ls` | `ls` | Table of Contents |
-| `cs` | `cd <Name directory>` | Go to directory |
+
+### 🖥️ System
+| Command   | Format                      | Description                                      |
+|-----------|-----------------------------|--------------------------------------------------|
+| `@`       | `@ <Command ESP-AT>`        | Untuk memerintah ESP-AT                         |
+| `help`    | `help`                      | Daftar perintah yang tersedia di Pico CLI       |
+| `echo`    | `echo <teks>`               | Menampilkan pesan yang Anda kirim               |
+
+### 🔌 GPIO
+| Command   | Format                                                                          | Description                                                          |
+|-----------|----------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| `gset`    | `gset [pin(#list)] {on | off | [0 - 255] | input | inputpull}`                          | Mengontrol GPIO (digital/analog) secara otomatis                    |
+| `grst`    | `grst {[pin(#list)] | rn ->(*)} [from pin]* [to pin]*`                          | Mereset pin yang dipilih dalam format tunggal, list, atau jangkauan |
+| `gsts`    | `gsts {[pin(#list)] | rn ->(*)} [from pin]* [to pin]*`                          | Melihat status pin saat ini                                         |
+
+### 💾 System Storage
+| Command   | Format                                                 | Description                         |
+|-----------|--------------------------------------------------------|-------------------------------------|
+| `mkfil`   | `mkfil <type> <filename>`                              | Membuat file baru                   |
+| `wrtfil`  | `wrtfil <filename> "content"`                          | Menulis isi ke dalam file           |
+| `rdfil`   | `rdfil <filename>`                                     | Membaca isi file                    |
+| `edtfil`  | `edtfil <-n | -r ->(*)> <filename> <index> "text"*`    | Mengedit file berdasarkan index     |
+| `rmvfil`  | `rmvfil <filename>`                                    | Menghapus file                      |
+| `szfil`   | `szfil <filename>`                                     | Menampilkan ukuran file             |
+| `rnmfil`  | `rnmfil <old_name> <new_name>`                         | Mengganti nama file                 |
+| `mkdir`   | `mkdir <folder_name>`                                  | Membuat folder                      |
+| `rmvdir`  | `rmvdir <folder_name>`                                 | Menghapus folder                    |
+| `ls`      | `ls`                                                   | Menampilkan daftar file/folder      |
+| `cs`      | `cd <directory_name>`                                  | Masuk ke direktori tertentu         |
+
 
 ## 📄 License
 
