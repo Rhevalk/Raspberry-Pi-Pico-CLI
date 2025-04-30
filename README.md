@@ -11,7 +11,9 @@ A lightweight and powerful command-line tool for the Raspberry Pi Pico, designed
 2. Configure GPIO protection settings and the [ESP-AT UART connection](#-wifi-module-with-esp-at).
 3. Install the Raspberry Pi Pico board support package  
    👉 [Install Pico board in Arduino IDE](https://docs.arduino.cc/hardware/raspberry-pi-pico/)
-4. Flash the Pico with the default firmware settings.
+4. Flash Pico make sure you use the FS option in the tools > file size, don't choose the one (no fs) and you can adjust it to the flash available on your Pico board.
+*tip: use 1MB or more flash and the rest for fs
+5. If you include esp-AT, then you can connect to pin rx(1), tx(0) or adjust your tomorrow
 
 ---
 
