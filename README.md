@@ -51,15 +51,43 @@ To send AT commands via Pico's serial interface, use the `@` symbol as a prefix.
 4. ESP-AT support: control Wi-Fi and BLE via ESP modules  
    👉 [See ESP-AT command examples](https://docs.espressif.com/projects/esp-at/en/latest/esp32c3/AT_Command_Examples/index.html)
 
+## How to Read the Command Format
+<>   : input string, write without ""
+[]   : input int
+""   : input string, write with ""
+|    : or
+#    : int or int list
+*    : required
+->(*): Complete arguments in the order of command required
+
+
+
 ## Command List
+|                                                                 System                       |
+|----------------------------|----------------------------------|---------------------------------------|
 | Command                     | Format                          | Description                           |
 |----------------------------|----------------------------------|---------------------------------------|
-| `mycli init`               | `mycli init`                     | Inisialisasi project baru             |
-| `mycli build`              | `mycli build [--prod]`           | Build project, gunakan `--prod` untuk production |
-| `mycli deploy`             | `mycli deploy <env>`             | Deploy project ke environment tertentu |
-| `mycli config set`         | `mycli config set <key> <value>` | Mengatur konfigurasi tertentu         |
-| `mycli config get`         | `mycli config get <key>`
-
+| `@`                        | `@ <Command ESP-AT>`             | untuk memerintah ESP-AT               |
+| `help`                     | `help`                           | daftar perintah yang tersedia di Pico CLI |
+| `echo`                     | `echo <teks>`                    | menampilkan pesan yang anda kirim |
+|                                                                 GPIO                       |
+|----------------------------|----------------------------------|---------------------------------------|
+| `gset`                     | `gset [pin(#list)] {<on | off> | [0 - 255] | input | inputpull}` | mengontrol gpio bisa digital maupun analog secara otomatis |
+| `grst`         | `grst {[pin(#list)] | rn ->(*)} [from pin]* [to pin]*` | mereset pin yang dipilih dalam tunggal, list atau jangkauan |
+| `gsts` | `gsts {[pin(#list)] | rn ->(*)} [from pin]* [to pin]*` | melihat status pin saat ini
+|                                                                 SYSTEM STORAGE                       |
+|----------------------------|----------------------------------|---------------------------------------|
+| `mkfil` | `mkfil <type> <filename` | Make file |
+| `wrtfi` | `wrtfil <filename> "content"` | Write file |
+| `rdfil` | `` | Read file |
+| `edtfil` | `` | Edit file |
+| `rmvfil` | `` | Remove file |
+| `szfil` | `` | Info file size |
+| `rnmfil` | `` | Rename file |
+| `mkdir` | `` | Make directory |
+| `rmvdir` | `` | Remove directory |
+| `ls` | `` | Table of Contents |
+| `cs` | `` | Go to directory |
 
 ## 📄 License
 
