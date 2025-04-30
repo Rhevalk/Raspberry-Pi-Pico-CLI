@@ -51,6 +51,16 @@ To send AT commands via Pico's serial interface, use the `@` symbol as a prefix.
 4. ESP-AT support: control Wi-Fi and BLE via ESP modules  
    👉 [See ESP-AT command examples](https://docs.espressif.com/projects/esp-at/en/latest/esp32c3/AT_Command_Examples/index.html)
 
+## Command List
+| Command                     | Format                          | Description                           |
+|----------------------------|----------------------------------|---------------------------------------|
+| `mycli init`               | `mycli init`                     | Inisialisasi project baru             |
+| `mycli build`              | `mycli build [--prod]`           | Build project, gunakan `--prod` untuk production |
+| `mycli deploy`             | `mycli deploy <env>`             | Deploy project ke environment tertentu |
+| `mycli config set`         | `mycli config set <key> <value>` | Mengatur konfigurasi tertentu         |
+| `mycli config get`         | `mycli config get <key>`
+
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [MIT License](https://img.shields.io/badge/license-MIT-green) file for details.
