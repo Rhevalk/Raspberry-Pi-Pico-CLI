@@ -47,7 +47,8 @@ To send AT commands via Pico's serial interface, use the `@` symbol as a prefix.
 
 1. Control GPIO: on/off, PWM, analog read, and digital read
 2. Create, delete, write, read, and edit any text-based files
-3. ESP-AT support: control Wi-Fi and BLE via ESP modules  
+3. Create, remove, cd, ls directory
+4. ESP-AT support: control Wi-Fi and BLE via ESP modules  
    👉 [See ESP-AT command examples](https://docs.espressif.com/projects/esp-at/en/latest/esp32c3/AT_Command_Examples/index.html)
 
 ## 📄 License
