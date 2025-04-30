@@ -72,11 +72,11 @@ To send AT commands via Pico's serial interface, use the `@` symbol as a prefix.
 | `echo`    | `echo <teks>`               | Menampilkan pesan yang Anda kirim               |
 
 ### 🔌 GPIO
-| Command   | Format                                                                          | Description                                                          |
-|-----------|----------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| `gset`    | `gset [pin(#list)] {on | off | [0 - 255] | input | inputpull}`                          | Mengontrol GPIO (digital/analog) secara otomatis                    |
-| `grst`    | `grst {[pin(#list)] | rn ->(*)} [from pin]* [to pin]*`                          | Mereset pin yang dipilih dalam format tunggal, list, atau jangkauan |
-| `gsts`    | `gsts {[pin(#list)] | rn ->(*)} [from pin]* [to pin]*`                          | Melihat status pin saat ini                                         |
+| Command   | Format                                                                 | Description                                                          |
+|-----------|------------------------------------------------------------------------|----------------------------------------------------------------------|
+| `gset`    | `gset [pin(#list)] {on \| off \| [0 - 255] \| input \| inputpull}`          | Mengontrol GPIO (digital/analog) secara otomatis                    |
+| `grst`    | `grst {[pin(#list)] \| rn ->(*)} [from pin]* [to pin]*`                | Mereset pin yang dipilih dalam format tunggal, list, atau jangkauan |
+| `gsts`    | `gsts {[pin(#list)] \| rn ->(*)} [from pin]* [to pin]*`                | Melihat status pin saat ini                                         |
 
 ### 💾 System Storage
 | Command   | Format                                                 | Description                         |
@@ -84,7 +84,7 @@ To send AT commands via Pico's serial interface, use the `@` symbol as a prefix.
 | `mkfil`   | `mkfil <type> <filename>`                              | Membuat file baru                   |
 | `wrtfil`  | `wrtfil <filename> "content"`                          | Menulis isi ke dalam file           |
 | `rdfil`   | `rdfil <filename>`                                     | Membaca isi file                    |
-| `edtfil`  | `edtfil <-n | -r ->(*)> <filename> <index> "text"*`    | Mengedit file berdasarkan index     |
+| `edtfil`  | `edtfil <-n \| -r ->(*)> <filename> <index> "text"*`    | Mengedit file berdasarkan index     |
 | `rmvfil`  | `rmvfil <filename>`                                    | Menghapus file                      |
 | `szfil`   | `szfil <filename>`                                     | Menampilkan ukuran file             |
 | `rnmfil`  | `rnmfil <old_name> <new_name>`                         | Mengganti nama file                 |
